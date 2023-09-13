@@ -5,7 +5,6 @@ const baseUrl =
 
 class API {
   static Future getCoins() {
-    var url = baseUrl;
-    return http.get(url as Uri);
+    return http.get(Uri.parse(baseUrl));
   }
 }

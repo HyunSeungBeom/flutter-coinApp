@@ -10,7 +10,7 @@ class CoinListPage extends StatefulWidget {
 }
 
 class CoinListPageState extends State<CoinListPage> {
-  List<Coin> coins = [];
+  var coins = [];
 
   @override
   void initState() {
@@ -21,6 +21,7 @@ class CoinListPageState extends State<CoinListPage> {
   Future<void> fetchData() async {
     try {
       final coinData = await API.getCoins();
+      print('coinData: $coinData');
       setState(() {
         coins = coinData;
       });
