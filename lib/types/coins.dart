@@ -11,7 +11,7 @@ class Coin {
   final double high24h;
   final double low24h;
   final double priceChange24h;
-  final double priceChangePercentage24h;
+  final double priceChangePercentage24h; 
   final double marketCapChange24h;
   final double marketCapChangePercentage24h;
   final double circulatingSupply;
